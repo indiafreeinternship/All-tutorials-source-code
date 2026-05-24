@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean class="com.app.Vendor" id="v1">
+    <constructor-arg>
+    	<value>v1109</value>
+    </constructor-arg>
+    <constructor-arg>
+    	<value>IND</value>
+    </constructor-arg>
+ </bean>
+ 
+ <bean class="com.app.Product" id="pobj">
+ 	 <constructor-arg>
+ 	 	<value>P01</value>
+ 	 </constructor-arg> 
+ 	 
+ 	 
+ 	  <constructor-arg>
+ 	  	<value>HP-23444</value>
+ 	  </constructor-arg> 
+ 	  
+ 	   <constructor-arg>
+ 	   <list>
+ 	   	<value>AA</value>
+ 	   	<value>BB</value>
+ 	   </list>
+ 	   </constructor-arg> 
+ 	   
+ 	    <constructor-arg>
+ 	    			<ref bean="v1"/>
+ 	    </constructor-arg> 
+ </bean>
+   
+
+</beans>
