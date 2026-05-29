@@ -3,14 +3,14 @@ package com.app;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("databaseCon")
 public class DatabaseCon {
-
-	@Value("${my.db}")
+	
+	@Value("${my.driVer}")
 	private String driver;
 	
 	@Value("${my.url}")
-	private String url; 
+	private String url;
 	
 	@Value("${my.username}")
 	private String username;
@@ -21,7 +21,7 @@ public class DatabaseCon {
 	@Value("${my.port}")
 	private int port;
 	
-	@Value("${my.enable}")
+	@Value("${my.active}")
 	private boolean active;
 
 	@Override
@@ -29,8 +29,7 @@ public class DatabaseCon {
 		return "DatabaseCon [driver=" + driver + ", url=" + url + ", username=" + username + ", password=" + password
 				+ ", port=" + port + ", active=" + active + "]";
 	}
+	
+	
 
-	
-	
-	
 }

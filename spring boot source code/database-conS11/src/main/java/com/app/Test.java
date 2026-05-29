@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Test {
 	
 	public static void main(String[] args) {
-		ApplicationContext ac=new AnnotationConfigApplicationContext(MyAppConfig.class);
+		ApplicationContext  ac=new AnnotationConfigApplicationContext(MyAppConfig.class);
 		DatabaseCon obj = ac.getBean("databaseCon",DatabaseCon.class);
 		System.out.println(obj);
 	}
