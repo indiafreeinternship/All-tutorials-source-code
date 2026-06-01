@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component("databaseCon")
 public class DatabaseCon {
 	
-	@Value("${my.driVer}")
+	@Value("${my.driver}")
 	private String driver;
 	
 	@Value("${my.url}")
