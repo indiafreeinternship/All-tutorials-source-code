@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class Customer
+{
+	
+	String cId,cName,mId;
+	long phNo;
+	
+	Customer(String cId,String cName,String mId,long phNo){
+		this.cId=cId;
+		this.cName=cName;
+		this.mId=mId;
+		this.phNo=phNo;
+	}
+	
+	void getCustomer(){
+		System.out.println("===========Customer Details===========");
+		System.out.println("CustomerId "+cId);
+		System.out.println("CustomerName "+cName);
+		System.out.println("CustomerMailId "+mId);
+		System.out.println("CustomerPhNo "+phNo);
+	}
+	
+}
+
+
+class Constructor2 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the CustomerId");
+		String id=s.nextLine();
+		System.out.println("Enter the CustomerName");
+		String name=s.nextLine();
+		System.out.println("Enter the CustomerMailId");
+		String mid=s.nextLine();
+		System.out.println("Enter the CustomerPhoneNumber");
+		long phNo=s.nextLong();
+		
+		Customer ob=new Customer(id,name,mid,phNo);//Con_Call
+		ob.getCustomer();//method_Call
+		
+	}
+}
