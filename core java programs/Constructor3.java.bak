@@ -1,0 +1,51 @@
+import java.util.Scanner;
+class BookDetails
+{
+	String code;
+	String name;
+	String author;
+	float price;
+	
+	BookDetails(String code,String name,String author,float price){
+		this.code=code;
+		this.name=name;
+		this.author=author;
+		this.price=price;
+		
+	}
+	
+	//getter method
+	void getBookDetails(){
+		System.out.println("=================BookDetails=============");
+		System.out.println("BookCode :"+code);
+		System.out.println("BookName "+name);
+		System.out.println("BookAuthor :"+author);
+		System.out.println("BookPrice :"+price);
+		
+	}
+	
+	
+}
+
+
+class Constructor3 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the BookCode");
+		String bCode=s.nextLine();
+		System.out.println("Enter the BookName");
+		String bName=s.nextLine();
+		System.out.println("Enter the BookAuthor");
+		String bAuthor=s.nextLine();
+		System.out.println("Enter the BookPrice");
+		float bPrice=s.nextLine();
+		
+		BookDetails ob=new BookDetails(bCode,bName,bAuthor,bPrice); // Con_Call
+		ob.getBookDetails();
+		
+		
+		
+	}
+}
