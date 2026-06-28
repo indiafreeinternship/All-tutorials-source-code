@@ -1,0 +1,6 @@
+my:
+  app:
+   host: GmailServer
+   port: 586
+   username: IndiaFreeInternship
+   active: true

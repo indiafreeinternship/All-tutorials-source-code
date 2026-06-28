@@ -1,0 +1,21 @@
+package com.app.runner;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import com.app.service.EmailService;
+
+@Component
+public class TestObjRunner implements CommandLineRunner {
+	
+     @Autowired
+	private EmailService emailService;
+	
+	@Override
+	public void run(String... args) throws Exception {
+		System.out.println(emailService);
+		
+	}
+
+}
