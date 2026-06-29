@@ -1,0 +1,16 @@
+my:
+  app:
+    pcode: hp360
+    pid: 101
+    pcost: 60000
+    colors: 
+      - RED
+      - GREEN
+      - PINK
+    models: 
+      M1: ABC
+      M2: MNO
+      M3: XYZ
+    vob:
+       vid: 8888
+       vcode: abc 

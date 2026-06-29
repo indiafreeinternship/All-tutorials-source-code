@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: BootConfigPropsEx-s22
+my:
+  app:
+    host: GmailServer
+    port: '586'
+    username: IndiaFreeInternship
+    active: 'false'
+    models[0]: M1
+    models[1]: M2
+    models[2]: M3
+    models[3]: M2
+    data:
+      C1: ABC
+      C2: XYZ
+      C3: pqr
+    mob:
+      code: C1325
+      details: SampleMobile
