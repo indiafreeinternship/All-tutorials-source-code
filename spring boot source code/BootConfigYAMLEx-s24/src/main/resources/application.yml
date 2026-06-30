@@ -1,0 +1,17 @@
+my:
+  book:
+    bname: science
+    authors: 
+     - HC VERMA
+     - XYZ
+     - PQR
+     - HC VERMA
+    versions: 
+     v1: E1
+     v2: E2
+     v3: E3
+    pob:
+     pid: 90012
+     code: PC12345
+     active: true
+      
