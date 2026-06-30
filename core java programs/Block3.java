@@ -3,6 +3,8 @@ class BTest2
 	int x;
 	static int y;
 	{
+		x++;
+		y++;
 		System.out.println("===========Subclass Instance-block===========");
 		System.out.println("The value of x: "+x);
 		System.out.println("The value of y: "+y);

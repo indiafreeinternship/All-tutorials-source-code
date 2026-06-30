@@ -16,6 +16,6 @@ class Block3
 		System.out.println("----------Object1----------");
 		BTest2 ob1=new BTest2();
 		System.out.println("------Object2--------------");
-		BTest2 ob2=new Btest2();
+		BTest2 ob2=new BTest2();
 	}
 }
