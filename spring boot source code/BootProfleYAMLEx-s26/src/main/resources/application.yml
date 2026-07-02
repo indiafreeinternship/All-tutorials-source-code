@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: BootProfleEx-s25
+my:
+  app:
+    db:
+      driver: Oracle
+      url: JDBC-ORCL
+      username: system
+      password: root
+      database: testdb
+
+---
+ my:
+  app:
+    db:
+        driver: MYSQL-QA
+        url: JDBC-ORCL-QA
+        username: rahul
+        password: raj@123
+        database: testdb
+ spring:
+   config:
+    active:
+     on-profile: qa
+---
+my:
+ app:
+  db:
+   driver: MYSQL-Prod
+   url: JDBC-ORCL-prod
+   username: soniya
+   password: soniya@9999
+   database: testDb
+spring:
+ config:
+  active:
+    on-profile: prod
