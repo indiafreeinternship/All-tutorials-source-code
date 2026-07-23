@@ -1,12 +1,14 @@
 package com.app.runner;
 
 import java.util.Arrays;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import com.app.entity.BookEntity;
+import com.app.exception.BookNotFoundException;
 import com.app.repo.BookRepository;
 
 import lombok.Lombok;
@@ -46,8 +48,26 @@ public class Test implements CommandLineRunner{
 		
 		boolean result = repo.existsById(12);
 		System.out.println(result);
+		//==================PART II================
 		
+		/*Optional<BookEntity> opt = repo.findById(5);
 		
+		if(opt.isPresent()) {
+			BookEntity bookEntity = opt.get();
+			System.out.println(bookEntity);
+		}else {
+			System.out.println("DATA NOT FOUND");
+			throw new BookNotFoundException("BOOK NOT FOUND WITH ID");
+		}*/
+		
+		BookEntity bookEntity = repo.findById(14).orElseThrow(()->new BookNotFoundException("BOOK NOT EXITS WITH ID"));
+		
+		System.out.println(bookEntity);
+		
+		repo.deleteById(11);
+		//repo.deleteAll();
+		repo.delete(bookEntity);
+	
 	}
 
 }
