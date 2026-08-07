@@ -1,6 +1,6 @@
 package p1;
 
-public class C3 extends C1, C2 {
+public class C3 extends C1 {
 
 	
 	
