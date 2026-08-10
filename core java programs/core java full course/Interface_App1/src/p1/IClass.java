@@ -20,7 +20,7 @@ public class IClass implements ITest{
 		
 	}
 	
-	public void m2(int y) // NonOverriding and NoNimplemented method
+	public void m2(int y) // NonOverriding and NonImplemented method
 	{
 		System.out.println("=====NonImplementation method m2(y)=====");
 		   System.out.println("The value y: "+y);
